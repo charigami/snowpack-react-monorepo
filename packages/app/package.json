@@ -1,0 +1,43 @@
+{
+  "name": "@local/app",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "clean": "rm -rf node_modules",
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "test": "web-test-runner \"src/**/*.test.tsx\"",
+    "test:watch": "web-test-runner --watch \"src/**/*.test.tsx\"",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
+    "lint": "tsc --noEmit && eslint src/**/*.{js,jsx,ts,tsx}"
+  },
+  "dependencies": {
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "@local/lib": "*",
+    "@local/simple": "*"
+  },
+  "devDependencies": {
+    "@snowpack/plugin-dotenv": "2.0.5",
+    "@snowpack/plugin-react-refresh": "2.4.0",
+    "@snowpack/plugin-typescript": "1.2.1",
+    "@snowpack/plugin-webpack": "2.3.0",
+    "@testing-library/react": "11.2.5",
+    "@types/chai": "4.2.15",
+    "@types/mocha": "8.2.1",
+    "@types/react": "17.0.2",
+    "@types/react-dom": "17.0.1",
+    "@types/snowpack-env": "2.3.3",
+    "@typescript-eslint/eslint-plugin": "4.15.2",
+    "@typescript-eslint/parser": "4.15.2",
+    "@web/test-runner": "0.12.15",
+    "chai": "4.3.0",
+    "eslint": "7.20.0",
+    "eslint-plugin-react": "7.22.0",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "prettier": "2.2.1",
+    "@snowpack/web-test-runner-plugin": "0.2.1",
+    "snowpack": "3.1.0-pre.6",
+    "typescript": "4.2.2"
+  }
+}

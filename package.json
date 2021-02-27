@@ -1,0 +1,12 @@
+{
+  "name": "react-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "clean": "(rm -rf node_modules); (cd packages/app && yarn clean); (cd packages/lib && yarn run clean); (cd packages/simple && yarn run clean);",
+    "start": "yarn workspace @local/app start"
+  },
+  "workspaces": [
+    "./packages/*"
+  ]
+}
