@@ -1,0 +1,11 @@
+{
+  "author": "krevativ",
+  "description": "Shared typescript configuration",
+  "keywords": [
+    "typescript",
+    "config"
+  ],
+  "license": "UNLICENSED",
+  "name": "@org/ts-config",
+  "version": "1.0.0"
+}

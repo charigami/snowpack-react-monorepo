@@ -1,12 +1,17 @@
 {
   "name": "react-monorepo",
   "private": true,
-  "version": "1.0.0",
   "scripts": {
-    "clean": "(rm -rf node_modules); (cd packages/app && yarn clean); (cd packages/lib && yarn run clean); (cd packages/simple && yarn run clean);",
-    "start": "yarn workspace @local/app start"
+    "build": "yarn workspace @org/app build",
+    "clean": "(rm -rf build); (rm -rf node_modules); (cd apps/app && yarn clean); (cd packages/eslint-config && yarn run clean);",
+    "format": "yarn workspace @org/app format",
+    "lint": "yarn workspace @org/app lint",
+    "start:app": "yarn workspace @org/app start",
+    "test": "yarn workspace @org/app app"
   },
+  "version": "1.0.0",
   "workspaces": [
+    "./apps/*",
     "./packages/*"
   ]
 }

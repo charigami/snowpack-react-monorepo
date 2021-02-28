@@ -1,0 +1,48 @@
+{
+  "dependencies": {
+    "@org/eslint-config": "1.0.0",
+    "@org/prettier-config": "1.0.0",
+    "@org/ts-config": "1.0.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
+  },
+  "devDependencies": {
+    "@snowpack/plugin-dotenv": "2.0.5",
+    "@snowpack/plugin-react-refresh": "2.4.0",
+    "@snowpack/plugin-typescript": "1.2.1",
+    "@snowpack/plugin-webpack": "2.3.0",
+    "@snowpack/web-test-runner-plugin": "0.2.1",
+    "@testing-library/react": "11.2.5",
+    "@types/chai": "4.2.15",
+    "@types/mocha": "8.2.1",
+    "@types/react": "17.0.2",
+    "@types/react-dom": "17.0.1",
+    "@types/snowpack-env": "2.3.3",
+    "@web/test-runner": "0.12.15",
+    "chai": "4.3.0",
+    "eslint": "7.21.0",
+    "prettier": "2.2.1",
+    "snowpack": "3.1.0-pre.8",
+    "typescript": "4.1.5"
+  },
+  "eslintConfig": {
+    "extends": "@org/eslint-config"
+  },
+  "eslintIgnore": [
+    "build",
+    "node_modules"
+  ],
+  "name": "@org/app",
+  "prettier": "@org/prettier-config",
+  "private": true,
+  "scripts": {
+    "build": "snowpack build",
+    "clean": "rm -rf node_modules",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
+    "lint": "tsc --noEmit && eslint src/**/*.{js,jsx,ts,tsx}",
+    "start": "snowpack dev",
+    "test": "web-test-runner \"src/**/*.test.tsx\"",
+    "test:watch": "web-test-runner --watch \"src/**/*.test.tsx\""
+  },
+  "version": "1.0.0"
+}

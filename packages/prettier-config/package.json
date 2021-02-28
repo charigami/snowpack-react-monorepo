@@ -1,0 +1,12 @@
+{
+  "author": "krevativ",
+  "description": "Shared prettier configuration",
+  "keywords": [
+    "prettier",
+    "config"
+  ],
+  "license": "UNLICENSED",
+  "main": "index.js",
+  "name": "@org/prettier-config",
+  "version": "1.0.0"
+}

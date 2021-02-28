@@ -5,6 +5,10 @@ interface ButtonProps {
 }
 
 const Button: React.FC<ButtonProps> = (props) => {
+  React.useEffect(() => {
+    console.log(props.children);
+  }, []);
+
   function handleClick() {
     console.log('Button clicked');
   }

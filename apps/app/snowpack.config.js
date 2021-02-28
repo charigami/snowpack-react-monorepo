@@ -4,6 +4,7 @@ module.exports = {
     public: { url: '/', static: true },
     src: { url: '/dist' },
   },
+  workspaceRoot: "../../",
   plugins: [
     '@snowpack/plugin-react-refresh',
     '@snowpack/plugin-dotenv',
@@ -18,6 +19,6 @@ module.exports = {
     /* ... */
   },
   buildOptions: {
-    /* ... */
+    out: "../../build/app",
   }
 };

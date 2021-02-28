@@ -1,18 +1,18 @@
-{
-  "root": true,
+module.exports = {
+  "root": false,
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
   "plugins": [
+    "prettier",
     "@typescript-eslint",
     "react-hooks"
   ],
   "extends": [
     "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended"
+    "plugin:@typescript-eslint/recommended"
   ],
   "rules": {
     "react-hooks/rules-of-hooks": "error",
@@ -36,4 +36,4 @@
       }
     }
   ]
-}
+};

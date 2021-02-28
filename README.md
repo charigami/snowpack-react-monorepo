@@ -1,0 +1,1 @@
+Boilerplate: React + typescript + eslint + testing-framework + snowpack
