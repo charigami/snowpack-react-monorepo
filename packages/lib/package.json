@@ -8,13 +8,13 @@
     "test": "web-test-runner \"src/**/*.test.tsx\"",
     "test:watch": "web-test-runner --watch \"src/**/*.test.tsx\""
   },
+  "main": "src/exports.ts",
   "dependencies": {
     "preact": "10.5.12",
     "react": "17.0.1",
     "react-dom": "17.0.1"
   },
   "devDependencies": {
-    "@org/lib": "1.0.0",
     "@org/eslint-config": "1.0.0",
     "@org/prettier-config": "1.0.0",
     "@org/ts-config": "1.0.0",
@@ -41,7 +41,7 @@
     "build",
     "node_modules"
   ],
-  "name": "@org/app",
+  "name": "@org/lib",
   "prettier": "@org/prettier-config",
   "private": true,
   "version": "1.0.0"

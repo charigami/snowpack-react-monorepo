@@ -1,13 +1,12 @@
 import { render, waitForElementToBeRemoved } from '@testing-library/react';
 import { expect } from 'chai';
 import React from 'react';
-import App from './App';
+import Button from './index';
 
-describe('<App>', () => {
-  it('renders click me button', async () => {
-    const { getByText } = render(<App />);
+describe('<Button>', () => {
+  it('renders button', async () => {
+    const { getByText } = render(<Button>Click me</Button>);
 
-    await waitForElementToBeRemoved(() => getByText(/Loading/i));
     const clickButton = getByText(/Click me/i);
 
     expect(document.body.contains(clickButton));

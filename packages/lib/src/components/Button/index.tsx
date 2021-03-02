@@ -4,11 +4,7 @@ interface ButtonProps {
   children: React.ReactNode;
 }
 
-const Button: React.FC<ButtonProps> = (props) => {
-  React.useEffect(() => {
-    console.log(props.children);
-  }, []);
-
+function Button(props: ButtonProps): React.ReactElement {
   function handleClick() {
     console.log('Button clicked');
   }
@@ -18,6 +14,7 @@ const Button: React.FC<ButtonProps> = (props) => {
       {props.children}
     </button>
   );
-};
+}
 
 export default Button;
+export { Button };

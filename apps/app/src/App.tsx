@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-const Button = React.lazy(() => import(/* webpackPrefatch: true */ './Button'));
+import { Button } from '@org/lib';
 
 const App: React.VoidFunctionComponent = function AppImpl() {
   // Create the count state.
@@ -24,10 +24,8 @@ const App: React.VoidFunctionComponent = function AppImpl() {
         </p>
         <p>
           Page has been open for <code>{count}</code> seconds.
+          <Button>Test</Button>
         </p>
-        <React.Suspense fallback="Loading ...">
-          {Button ? <Button>Click me</Button> : null}
-        </React.Suspense>
       </header>
     </div>
   );
